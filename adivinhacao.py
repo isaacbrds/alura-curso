@@ -4,4 +4,11 @@ print("*********************************")
 
 numero_secreto = 45
 
-int(input('Digite seu chute: '))
+chute = int(input('Digite seu chute: '))
+
+print(f'Você digitou {chute}')
+
+if(numero_secreto == chute):
+  print("Você acertou!!")
+else:
+  print("VocEê errou")
