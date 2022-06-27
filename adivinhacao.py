@@ -6,8 +6,18 @@ print("*********************************")
 
 
 numero_secreto = random.randrange(1,101)
-numero_de_tentativas = 3
-rodada = 1
+numero_de_tentativas = 0
+
+print('Qual o nível de dificuldade? ')
+print('(1) Fácil (2) Médio (3) Difícil ')
+nivel = int(input('Digite o nível desejado: '))
+
+if nivel == 1:
+  numero_de_tentativas = 20
+elif nivel == 2:
+  numero_de_tentativas = 10
+else:
+  numero_de_tentativas = 5
 
 for rodada in range(1, numero_de_tentativas + 1):
   print(f'Tentativa {rodada} de {numero_de_tentativas}')
